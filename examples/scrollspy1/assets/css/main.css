@@ -69,14 +69,7 @@ h1 {
 **/
 
 /** page layout **/
-header {
-    display: grid;
-    grid-template-columns: 1fr 15em;
-    max-width: 100em;
-    width: 90%;
-    margin: 0 auto;
-}
-
+header, 
 main {
     display: grid;
     grid-template-columns: 1fr 15em;
