@@ -6,6 +6,7 @@ html {
 /* 2. Make nav sticky */
 main>nav {
     position: sticky;
+    width: 1rem;
     top: 2rem;
     align-self: start;
 }
@@ -36,22 +37,6 @@ main>nav {
     color: #666;
 }
 
-/** Poor man's reset **/
-/**
-* {
-    box-sizing: border-box;
-}
-
-html,
-body {
-    background: #fff;
-}
-
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-}
-**/
-
 .section-nav ul,
 .section-nav ol {
     list-style: none;
@@ -62,14 +47,16 @@ body {
 .section-nav li {
     margin-left: 1rem;
 }
-/**
-h1 {
-    font-weight: 300;
-}
-**/
 
 /** page layout **/
-header, 
+header {
+    display: grid;
+    grid-template-columns: 1fr 15em;
+    max-width: 100em;
+    width: 90%;
+    margin: 0em auto 4rem;
+}
+
 main {
     display: grid;
     grid-template-columns: 1fr 15em;
@@ -79,12 +66,11 @@ main {
 }
 
 /** enlarge the sections for this demo, so that we have a long scrollable page **/
-/**
-main>section {
-    padding-bottom: 20rem;
+
+main>div>section {
+    padding-bottom: 3rem;
 }
 
-main>section>section {
-    padding-bottom: 5rem;
+main>div>section>section {
+    padding-bottom: 2rem;
 }
-**/
